@@ -1,0 +1,4 @@
+no-copy-extensions: 
+relative-dir: project\
+save-to: compiled\
+compilable-extensions: html, php
