@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Regular';
+  font-family: 'Vegur';
   src: url("/fonts/Vegur-Regular.woff");
 }
 
@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Regular';
+  font-family: 'Vegur' sans-serif;
 }
 
 html {

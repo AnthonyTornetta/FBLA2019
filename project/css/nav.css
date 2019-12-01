@@ -1,9 +1,10 @@
 nav {
   width: 100%;
-  background-color: #048;
+  background-color: transparent;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 nav ul {
@@ -19,6 +20,22 @@ nav ul li a {
   padding: 16px 20px;
   text-align: center;
   display: block;
+  color: black;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav .colored {
+  background-color: #048;
+}
+
+nav .colored ul li a {
   color: white;
 }
 /*# sourceMappingURL=nav.css.map */
