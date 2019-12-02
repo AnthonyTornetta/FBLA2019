@@ -3,15 +3,6 @@
     <head>
         <title>A.C.E Airlines</title>
         <template src='/templates/head.html' />
-
-        <script>
-            website.addOnLoad(() =>
-            {
-                tickList('slogan-list', 12);
-            });
-
-            console.log('RkJMQSBpcyBzdHVwaWQgYW5kIGEgcHlyYW1pZCBzY2hlbWUu');
-        </script>
     </head>
     <body>
 
@@ -19,28 +10,14 @@
         <div class="wrapper">
             <template src='/templates/nav.html' />
 
-            <!--Transparent Navigation-->
-            <div id='titlecard' class="titlecard">
-                <div class="titlebox">
-                    <h1 class="title"><var name='airline' /></h1>
-                    
-                    <div class="center-box">
-                        <noscript>
-                            <p><var name="slogan"/></p>
-                        </noscript>
-                        <ul id="slogan-list" style="display: none;" class="slogan">
-                            <li>Quote #1</li>
-                            <li>Quote #2</li>
-                            <li>Quote #3</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="call-to-action">
-                    <button class='btn-clear' id='book-btn'><span class="btn-text">Book Flight</span></button>
-                </div>
-            </div>
-
             <div class="main">
+
+            <!--Transparent Navigation-->
+                <h1>Affordable, Captivating, and Efficient</h1>
+
+                <h2 class = "button">Book Now</h2>
+
+
                 <!--Have three squares in line with eachother with these saving programs-->
                 <div class = "frequentflyer">
                     <h2>Join and Save</h2>
@@ -60,61 +37,23 @@
                 <!--Book Your Flight Now Area-->
                 <div class = "flights">
                     <h2>Book Your Flight Now</h2>
-                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                    <p>Flying to over 14 cities surrounding the Pennsylvania area, A.C.E is compared to many of the premier airlines while offering tickets up to 75% cheaper than competitors</p>
                     <h2 class = "button">Book Now</h2>
                 </div>
-                <div class = "flights">
-                        <h2>Book Your Flight Now</h2>
-                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                        <h2 class = "button">Book Now</h2>
-                    </div>
-                    <div class = "flights">
-                            <h2>Book Your Flight Now</h2>
-                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                            <h2 class = "button">Book Now</h2>
-                        </div>
-                        <div class = "flights">
-                                <h2>Book Your Flight Now</h2>
-                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                <h2 class = "button">Book Now</h2>
-                            </div>
-                            <div class = "flights">
-                                    <h2>Book Your Flight Now</h2>
-                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                    <h2 class = "button">Book Now</h2>
-                                </div>
-                                <div class = "flights">
-                                        <h2>Book Your Flight Now</h2>
-                                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                        <h2 class = "button">Book Now</h2>
-                                    </div>
-                                    <div class = "flights">
-                                            <h2>Book Your Flight Now</h2>
-                                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                            <h2 class = "button">Book Now</h2>
-                                        </div>
-                                        <div class = "flights">
-                                                <h2>Book Your Flight Now</h2>
-                                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                                <h2 class = "button">Book Now</h2>
-                                            </div>
-                                            <div class = "flights">
-                                                    <h2>Book Your Flight Now</h2>
-                                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
-                                                    <h2 class = "button">Book Now</h2>
-                                                </div>
             </div>
 
-            <footer>
-                <hr class="somestupidcoloredbarblue" />
-                <h2>Connect With Us:</h2>
-                <p>Facebook Icon</p>
-                <p>Instagram Icon</p>
-                <p>Twitter Icon</p>
-            
-                <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>
-            </footer>
+                <!--Hiring Area-->
+                <div class = "hiring"> 
+                    <h2>Join Our Team!</h2>
+                    
+                    <h3>Mechanic</h3>
+                    <h3>Pilot</h3>
+                    <h3>Flight Attendant</h3>
+                    <h3>Coporate Office</h3>
+                </div>
         </div>
+
+        <template src='/templates/footer.html' />
     </body>
 </html>
 
