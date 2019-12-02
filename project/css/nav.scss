@@ -1,7 +1,7 @@
 nav
 {
     width: 100%;
-    background-color: transparent;
+    background-color: #209CEE;
     top: 0;
     position: fixed;
 
@@ -20,7 +20,7 @@ nav
                 padding: 16px 20px;
                 text-align: center;
                 display: block;
-                color: black;
+                color: white;
                 transition: color 0.5s;
                 transition: background-color 0.5s;
 
@@ -31,6 +31,11 @@ nav
             }
         }
     }
+}
+
+.nav-transparent
+{
+    background-color: transparent;
 }
 
 nav

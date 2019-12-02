@@ -12,7 +12,7 @@ website.addOnLoad(() =>
         console.log('update');
         let titlecard = document.getElementById('titlecard');
 
-        if(titlecard !== null) 
+        if(titlecard !== null)
         {
             let nav = document.getElementById('nav');
 
