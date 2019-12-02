@@ -3,6 +3,15 @@
     <head>
         <title>A.C.E Airlines</title>
         <template src='/templates/head.html' />
+
+        <script>
+            website.addOnLoad(() =>
+            {
+                tickList('slogan-list', 12);
+            });
+
+            console.log('RkJMQSBpcyBzdHVwaWQgYW5kIGEgcHlyYW1pZCBzY2hlbWUu');
+        </script>
     </head>
     <body>
 
@@ -10,39 +19,94 @@
         <div class="wrapper">
             <template src='/templates/nav.html' />
 
-            <div class="main">
-
             <!--Transparent Navigation-->
-                <h1>Affordable, Captivating, and Efficient</h1>
+            <div id='titlecard' class="titlecard">
+                <div class="titlebox">
+                    <h1 class="title"><var name='airline' /></h1>
+                    
+                    <div class="center-box">
+                        <noscript>
+                            <p><var name="slogan"/></p>
+                        </noscript>
+                        <ul id="slogan-list" style="display: none;" class="slogan">
+                            <li>Quote #1</li>
+                            <li>Quote #2</li>
+                            <li>Quote #3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <button class='btn-clear' id='book-btn'><span class="btn-text">Book Flight</span></button>
+                </div>
+            </div>
 
-                <h2 class = "button">Book Now</h2>
-
-
+            <div class="main">
                 <!--Have three squares in line with eachother with these saving programs-->
-                <div class = "frequentflyer" style="display:none">
+                <div class = "frequentflyer">
                     <h2>Join and Save</h2>
                     <p>Access our discounts to fares, vacation bundles, and even discounts on bags</p>
                 </div>
 
-                    <div class = "email" style="display:none">
+                    <div class = "email">
                     <h2>Subscribe For More Savings</h2>
                     <p>Join our email lists for promotions, deals, and savings</p>
                 </div>
 
-                <div class = "card" style="display:none">
+                <div class = "card">
                     <h2>A.C.E Mastercard</h2>
                     <p>Earn up to 50,000 miles while tripling miles on all purchases</p>
                 </div>
 
                 <!--Book Your Flight Now Area-->
-                <div class = "flights" style="display:none">
+                <div class = "flights">
                     <h2>Book Your Flight Now</h2>
                     <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
                     <h2 class = "button">Book Now</h2>
                 </div>
+                <div class = "flights">
+                        <h2>Book Your Flight Now</h2>
+                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                        <h2 class = "button">Book Now</h2>
+                    </div>
+                    <div class = "flights">
+                            <h2>Book Your Flight Now</h2>
+                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                            <h2 class = "button">Book Now</h2>
+                        </div>
+                        <div class = "flights">
+                                <h2>Book Your Flight Now</h2>
+                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                <h2 class = "button">Book Now</h2>
+                            </div>
+                            <div class = "flights">
+                                    <h2>Book Your Flight Now</h2>
+                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                    <h2 class = "button">Book Now</h2>
+                                </div>
+                                <div class = "flights">
+                                        <h2>Book Your Flight Now</h2>
+                                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                        <h2 class = "button">Book Now</h2>
+                                    </div>
+                                    <div class = "flights">
+                                            <h2>Book Your Flight Now</h2>
+                                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                            <h2 class = "button">Book Now</h2>
+                                        </div>
+                                        <div class = "flights">
+                                                <h2>Book Your Flight Now</h2>
+                                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                                <h2 class = "button">Book Now</h2>
+                                            </div>
+                                            <div class = "flights">
+                                                    <h2>Book Your Flight Now</h2>
+                                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                                    <h2 class = "button">Book Now</h2>
+                                                </div>
             </div>
 
             <footer>
+                <hr class="somestupidcoloredbarblue" />
                 <h2>Connect With Us:</h2>
                 <p>Facebook Icon</p>
                 <p>Instagram Icon</p>

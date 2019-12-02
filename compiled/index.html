@@ -1,51 +1,141 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-
+        <title>A.C.E Airlines</title>
+        
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script src="/js/website.js"></script>
+<script src="/js/list-ticker.js"></script>
+
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css/nav.css">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 
     <title>ACE Airlines</title>
 
 
+
+        <script>
+            website.addOnLoad(() =>
+            {
+                tickList('slogan-list', 12);
+            });
+
+            console.log('RkJMQSBpcyBzdHVwaWQgYW5kIGEgcHlyYW1pZCBzY2hlbWUu');
+        </script>
     </head>
     <body>
-        <div class="wrapper">
 
+        <!--Yeah Corns, I have no idea what this is for-->
+        <div class="wrapper">
+            
 <nav id="nav">
     <ul class="nav">
-        <li class="nav-element"><a href='/'>Home</a></li><li class="nav-element"><a href='/book.html'>Home</a></li><li class="nav-element"><a href='/jobs.html'>Jobs</a></li>
+        <li class="nav-element"><a href='/'>Home</a></li><li class="nav-element"><a href='/book.html'>Booking</a></li><li class="nav-element"><a href='/jobs.html'>Jobs</a></li>
     </ul>
-</nav>
+</nav>
 
-            <div class="main">
-                <div class="titlecard">
-                    <div class="titlebox">
-                        <h1 class="title">ACE Airlines</h1>
-                        <p class="slogan">Affordable, Captivating, Efficient</p>
-                    </div>
-                    <div class="call-to-action">
-                        <button class='btn-clear' id='book-btn'><span class="btn-text">Book Flight</span></button>
+<script src="/js/nav.js"></script>
+
+            <!--Transparent Navigation-->
+            <div id='titlecard' class="titlecard">
+                <div class="titlebox">
+                    <h1 class="title">ACE Airlines</h1>
+                    
+                    <div class="center-box">
+                        <noscript>
+                            <p>Affordable, Captivating, Efficient</p>
+                        </noscript>
+                        <ul id="slogan-list" style="display: none;" class="slogan">
+                            <li>Quote #1</li>
+                            <li>Quote #2</li>
+                            <li>Quote #3</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="rest">
-                    <div class="section" id="1">
-                        Frequent Flyer
-                    </div>
-                    <div class="section" id="2">
-                        Scheduel
-                    </div>
+                <div class="call-to-action">
+                    <button class='btn-clear' id='book-btn'><span class="btn-text">Book Flight</span></button>
                 </div>
             </div>
 
+            <div class="main">
+                <!--Have three squares in line with eachother with these saving programs-->
+                <div class = "frequentflyer">
+                    <h2>Join and Save</h2>
+                    <p>Access our discounts to fares, vacation bundles, and even discounts on bags</p>
+                </div>
+
+                    <div class = "email">
+                    <h2>Subscribe For More Savings</h2>
+                    <p>Join our email lists for promotions, deals, and savings</p>
+                </div>
+
+                <div class = "card">
+                    <h2>A.C.E Mastercard</h2>
+                    <p>Earn up to 50,000 miles while tripling miles on all purchases</p>
+                </div>
+
+                <!--Book Your Flight Now Area-->
+                <div class = "flights">
+                    <h2>Book Your Flight Now</h2>
+                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                    <h2 class = "button">Book Now</h2>
+                </div>
+                <div class = "flights">
+                        <h2>Book Your Flight Now</h2>
+                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                        <h2 class = "button">Book Now</h2>
+                    </div>
+                    <div class = "flights">
+                            <h2>Book Your Flight Now</h2>
+                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                            <h2 class = "button">Book Now</h2>
+                        </div>
+                        <div class = "flights">
+                                <h2>Book Your Flight Now</h2>
+                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                <h2 class = "button">Book Now</h2>
+                            </div>
+                            <div class = "flights">
+                                    <h2>Book Your Flight Now</h2>
+                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                    <h2 class = "button">Book Now</h2>
+                                </div>
+                                <div class = "flights">
+                                        <h2>Book Your Flight Now</h2>
+                                        <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                        <h2 class = "button">Book Now</h2>
+                                    </div>
+                                    <div class = "flights">
+                                            <h2>Book Your Flight Now</h2>
+                                            <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                            <h2 class = "button">Book Now</h2>
+                                        </div>
+                                        <div class = "flights">
+                                                <h2>Book Your Flight Now</h2>
+                                                <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                                <h2 class = "button">Book Now</h2>
+                                            </div>
+                                            <div class = "flights">
+                                                    <h2>Book Your Flight Now</h2>
+                                                    <p>Flying to over 50 cities across the United States, A.C.E is one of the premier airlines of the region while also providing highly competitve prices</p>
+                                                    <h2 class = "button">Book Now</h2>
+                                                </div>
+            </div>
+
             <footer>
-                follow us on social media please
+                <hr class="somestupidcoloredbarblue" />
+                <h2>Connect With Us:</h2>
+                <p>Facebook Icon</p>
+                <p>Instagram Icon</p>
+                <p>Twitter Icon</p>
+            
+                <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>
             </footer>
         </div>
     </body>
