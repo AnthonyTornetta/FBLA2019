@@ -13,6 +13,7 @@
   src: url("/fonts/Vegur-Bold.woff");
 }
 
+/*NOCOMPILE*/
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +63,8 @@ body {
 
 .titlecard {
   background-image: url("/images/wing.jpg");
-  background-attachment: scroll;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,6 +104,7 @@ body {
 }
 
 .titlecard .titlebox .slogan {
+  text-align: center;
   font-size: 2em;
   color: white;
 }
@@ -121,6 +124,12 @@ body {
   padding: 12px 16px;
   outline: 2px solid white;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.titlecard .call-to-action button:hover {
+  background-color: #209CEE;
 }
 
 .center-box {

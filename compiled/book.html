@@ -39,16 +39,55 @@
 
 <script src="/js/nav.js"></script>
 
-            <div class="main">
-                <div class="titelcard">
+            <div id='titlecard' class="titlecard">
                     <div class="titlebox">
-                        <h1 class="title">Book Flight</h1>
-                        <p class="slogan">ACE Airlines</p>
-                    </div>
+                        <h1 class="title">ACE Airlines</h1>
+                        <p class="slogan">Book Flight</p>
+                    </div> 
                 </div>
+            </div>
 
+            <div class="main">
+                <h2>Book your flight</h2>
                 <form action="/" class="booking">
-                    
+                    <label for="from">Airport from</label><input name="from" list="ports" type="text">
+                    <datalist id="ports">
+                        <option value="Baltimore/Washington International Thurgood Marshall Airport (BWI)">
+                        <option value="LaGuardia Airport (LGA)">
+                        <option value="Trenton-Mercer Airport (TTL)">
+                        <option value="Philadelphia International Airport (PHL)">
+                        <option value="Pittsburgh International Airport (PIT)">
+                        <option value="Ronald Reagan Washington National (DCA)">
+                        <option value="Washington Dulles International (IAD)">
+                        <option value="Yeager Airport (CRW)">
+                        <option value="John F Kennedy Airport (JFK)">
+                        <option value="Wilmington Airport (ILG)">
+                        <option value="Hagerstown Regional Airport (HGR)">
+                        <option value="Atlantic City International Airport (ACY)">
+                        <option value="Newark Liberty International Airport (EWR)">
+                    </datalist>
+
+                    <label for="from">Airport to</label><input name="to" list="ports" type="text">
+
+                    <label for="oneway">Flight Type</label>
+                    <select name="oneway">
+                        <option value="oneway">One Way</option>
+                        <option value="roundtrip">Round Trip</option>
+                    </select>
+
+                    <label for="date">Date Leaving</label><input name="leavingdate" type="date">
+                    <!-- CHECK IF TWO-WAY -->
+                    <div id="two-way">
+                        <label for="date">Date Coming Back</label><input name="arrivingdate" type="date">
+                    </div>
+
+                    <h3 class="category">Travelers</h3>
+                    <label for="adults">Adults (18+)</label><input name="adults" value="1" required type="number">
+                    <label for="children">Children (&lt; 15)</label><input name="adults" value="0" required type="number">
+
+                    <label for="promo">Promotional Code</label><input name="promo" type="text" placeholder="Leave blank if none">
+
+                    <input type="submit" value="Book Flight!">
                 </form>
             </div>
         </div>
