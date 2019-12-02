@@ -9,7 +9,6 @@ website.addOnLoad(() =>
 
     function navUpdate()
     {
-        console.log('update');
         let titlecard = document.getElementById('titlecard');
 
         if(titlecard !== null) 
