@@ -24,16 +24,66 @@ body
     flex-direction: column;
 }
 
-.wrapper
+.wrapper, .main
 {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.main
+.blue-bar
 {
+    width: 100%;
+    height: 30px;
+    background-color: $colormain;
+}
+
+.main-page-list
+{
+    display: flex;
     flex: 1;
+    flex-direction: column;
+
+    .holder
+    {
+        // a background image will be specified in the HTML file
+
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;
+        display: flex;
+
+        min-height: 25vh;
+
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+
+        h2
+        {
+            font-size: 2em;
+        }
+
+        p
+        {
+            font-size: 1.4em;
+        }
+
+        .text
+        {
+            padding: 16px;
+            width: 70%;
+            background-color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px)
+{
+  .news-box
+  {
+    flex: 1;
+  }
 }
 
 .titlecard
@@ -137,12 +187,6 @@ body
     {
         background-color: brighten($colormain, 5);
     }
-}
-
-.main
-{
-    margin: 0 10%;
-    padding-top: 70px;
 }
 
 .transparent

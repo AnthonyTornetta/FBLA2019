@@ -10,40 +10,21 @@
     {
         flex: 1;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         
-
         .group
         {
-            label
+            &:nth-child(odd)
             {
-                font-size: 1.4em;
-                flex: 10%;
+                margin-right: 10px;
+            }
+            &:nth-child(even)
+            {
+                margin-left: 10px;
             }
 
-            input
-            {
-                font-size: 1.3em;
-                flex: 35%;
-                padding: 0 5px;
-                outline: thin solid $colormain;
-                background-color: white;
-            }
-
-            input[type=submit]
-            {
-                transition: background-color 0.5s;
-                background-color: $colormain;
-                color: white;
-                cursor: pointer;
-
-                &:hover
-                {
-                    background-color: lighten($colormain, 5);
-                }
-            }
-
+            flex: 1;
             h3
             {
                 width: 100%;
@@ -53,5 +34,37 @@
         }
 
         padding: 30px 0;
+    }
+}
+
+.group 
+{
+    label
+    {
+        font-size: 1.4em;
+        flex: 10%;
+    }
+
+    input, select
+    {
+        font-size: 1.3em;
+        flex: 35%;
+        padding: 8px 12px;
+        outline: thin solid $colormain;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    input[type=submit]
+    {
+        transition: background-color 0.5s;
+        background-color: $colormain;
+        color: white;
+        cursor: pointer;
+
+        &:hover
+        {
+            background-color: lighten($colormain, 5);
+        }
     }
 }

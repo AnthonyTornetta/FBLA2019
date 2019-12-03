@@ -70,47 +70,55 @@
                     </datalist>
 
                     <div class="group">
-                        <label for="from">Airport from</label><input name="from" list="ports" type="text">
+                        
+                        <div class="group left">
+                            <label for="from">Airport From</label><input name="from" list="ports" type="text">
+                        </div>
 
-                        <label for="from">Airport to</label><input name="to" list="ports" type="text">
+                        <div class="group right">
+                            <label for="to">Airport To</label><input name="to" list="oprts" type="text">
+                        </div>
                     </div>
 
                     <h3 class="category">Flight Information</h3>
                     <div class="group">
-                        <label for="oneway">Flight Type</label>
-                        <select name="oneway" id="oneway" onchange="onewaychange()">
-                            <option value="oneway">One Way</option>
-                            <option value="roundtrip">Round Trip</option>
-                        </select>
+                        <div class="group left">
+                            <label for="oneway">Flight Type</label>
+                            <select name="oneway" id="oneway" onchange="onewaychange()">
+                                <option value="oneway">One Way</option>
+                                <option value="roundtrip">Round Trip</option>
+                            </select>
+                        </div>
+                        <div class="group right"></div>
                     </div>
 
                     <h3 class="category">Dates</h3>
                     <div class="group">
-                        <div class="group">
+                        <div class="group left">
                             <label for="date">Date Leaving</label><input name="leavingdate" type="date">
                         </div>
                         
                         <!-- CHECK IF TWO-WAY -->
-                        <div id="two-way" class="group" style="display: none;">
-                            <label for="date">Date Coming Back</label><input name="arrivingdate" type="date">
+                        <div class="group">
+                            <span class="group right" id="two-way" style="display: none;"><label for="date">Date Coming Back</label><input name="arrivingdate" type="date"></span>
                         </div>
                     </div>
 
                     <h3 class="category">Travelers</h3>
                     <div class="group">
-                        <div class="group">
-                        <label for="adults">Adults (18+)</label><input name="adults" value="1" required type="number">
+                        <div class="group left">
+                        <label for="adults">Adults (18+)</label><input name="adults" min="0" value="1" required type="number">
                         </div>
-                        <div class="group">
-                            <label for="children">Children (&lt; 15)</label><input name="adults" value="0" required type="number">
+                        <div class="group right">
+                            <label for="children">Children (&lt; 18)</label><input name="adults" min="0" value="0" required type="number">
                         </div>
                     </div>
 
                     <div class="group">
-                        <div class="group">
+                        <div class="group left">
                             <label for="promo">Promotional Code</label><input name="promo" type="text" placeholder="Leave blank if none">
                         </div>
-                        <div class="group">
+                        <div class="group right">
                             <input type="submit" value="Book Flight!">
                         </div>
                     </div>
@@ -120,7 +128,7 @@
 
         
 <footer>
-    <h2>Connect With Us:</h2>
+    <h2 style="margin-bottom: 5px;">Connect With Us</h2>
     <ul>
         <li><a href="#"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
         <li><a href="#"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>

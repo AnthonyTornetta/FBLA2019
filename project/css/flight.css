@@ -16,10 +16,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -27,27 +27,43 @@
 }
 
 .booking .group .group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0;
 }
 
-.booking .group .group label {
+.booking .group .group:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.booking .group .group:nth-child(even) {
+  margin-left: 10px;
+}
+
+.booking .group .group h3 {
+  width: 100%;
+}
+
+.group label {
   font-size: 1.4em;
   -webkit-box-flex: 10%;
       -ms-flex: 10%;
           flex: 10%;
 }
 
-.booking .group .group input {
+.group input, .group select {
   font-size: 1.3em;
   -webkit-box-flex: 35%;
       -ms-flex: 35%;
           flex: 35%;
-  padding: 0 5px;
+  padding: 8px 12px;
   outline: thin solid #209CEE;
   background-color: white;
+  margin: 5px 0;
 }
 
-.booking .group .group input[type=submit] {
+.group input[type=submit] {
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   background-color: #209CEE;
@@ -55,11 +71,7 @@
   cursor: pointer;
 }
 
-.booking .group .group input[type=submit]:hover {
+.group input[type=submit]:hover {
   background-color: #38a7f0;
-}
-
-.booking .group .group h3 {
-  width: 100%;
 }
 /*# sourceMappingURL=flight.css.map */
