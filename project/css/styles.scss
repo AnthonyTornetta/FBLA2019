@@ -142,6 +142,16 @@ body
 
 .hire
 {
+    display: flex;
+
+    .pic
+    {
+        height: 71.4% !important;
+        width: 100% !important;
+        align-self: center;
+    }
+
+    height: 700px !important;
     div
     {
         display: flex;
