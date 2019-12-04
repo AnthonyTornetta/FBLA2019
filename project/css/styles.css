@@ -161,6 +161,21 @@ body {
   margin: 0 10%;
 }
 
+.hire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px !important;
+}
+
+.hire .pic {
+  height: 71.4% !important;
+  width: 100% !important;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .hire div {
   display: -webkit-box;
   display: -ms-flexbox;
