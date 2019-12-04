@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <template src='/templates/head.html' />
+
+        <script>
+        function getUrlVars()
+        {
+            let vars = {};
+            let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, (m,key,value) =>
+            {
+                vars[key] = value;
+            });
+            return vars;
+        }
+</script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <template src='/templates/nav.html' />
+
+            <div id='titlecard' class="titlecard">
+                    <div class="titlebox">
+                        <h1 class="title">ACE Airlines</h1>
+                        <p class="slogan">Booking Successful!</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>Booking Successful!</h2>
+                <p>Your flight has been schedueled for <span style="font-size: 1em;" id="date"></span>!</p>
+                <p>Click <a href="/">here</a> to return to the home page.</p>
+
+                <script>
+                    // im too lazy to do this elsewhere
+                    document.getElementById('date').innerHTML = getUrlVars()['leavingdate'];
+                </script>
+            </div>
+
+            <template src='/templates/footer.html' />
+        </div>
+    </body>
+</html>

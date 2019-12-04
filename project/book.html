@@ -20,7 +20,7 @@
 
             <div class="main">
                 <h2>Book your flight</h2>
-                <form action="/" class="booking" onsubmit="formsubmit">
+                <form action="/flight-confirmation.html" class="booking" onsubmit="formsubmit">
                     <datalist id="ports">
                         <option value="Baltimore/Washington International Thurgood Marshall Airport (BWI)">
                         <option value="LaGuardia Airport (LGA)">
@@ -38,13 +38,12 @@
                     </datalist>
 
                     <div class="group">
-                        
                         <div class="group left">
-                            <label for="from">Airport From</label><input name="from" list="ports" type="text">
+                            <label for="from">Airport From</label><input name="from" required list="ports" type="text">
                         </div>
 
                         <div class="group right">
-                            <label for="to">Airport To</label><input name="to" list="ports" type="text">
+                            <label for="to">Airport To</label><input name="to" required list="ports" type="text">
                         </div>
                     </div>
 
@@ -52,7 +51,7 @@
                     <div class="group">
                         <div class="group left">
                             <label for="oneway">Flight Type</label>
-                            <select name="oneway" id="oneway" onchange="onewaychange()">
+                            <select name="oneway" id="oneway" required onchange="onewaychange()">
                                 <option value="oneway">One Way</option>
                                 <option value="roundtrip">Round Trip</option>
                             </select>
@@ -63,12 +62,12 @@
                     <h3 class="category">Dates</h3>
                     <div class="group">
                         <div class="group left">
-                            <label for="date">Date Leaving</label><input name="leavingdate" type="date">
+                            <label for="date">Date Leaving</label><input name="leavingdate" required type="date">
                         </div>
                         
                         <!-- CHECK IF TWO-WAY -->
-                        <div class="group">
-                            <span class="group right" id="two-way" style="display: none;"><label for="date">Date Coming Back</label><input name="arrivingdate" type="date"></span>
+                        <div class="group right">
+                            <span class="group right" id="two-way" style="display: none; font-size: 1em;"><label for="date">Date Coming Back</label><input name="arrivingdate" type="date"></span>
                         </div>
                     </div>
 
