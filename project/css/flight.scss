@@ -68,3 +68,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 1000px)
+{
+    .booking .group
+    {
+        flex-direction: column;
+
+        .group
+        {
+            margin: 0 !important;
+        }
+    }
+}

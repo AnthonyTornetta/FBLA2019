@@ -10,6 +10,5 @@ var website =
 
 window.addEventListener('load', () =>
 {
-    console.log(onloads);
     onloads.forEach(f => f());
 });
