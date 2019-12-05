@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>A.C.E Airlines</title>
+        <title>ACE Airlines</title>
         
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,20 @@
 <link rel="stylesheet" href="/css/nav.css">
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 
 
     <title>ACE Airlines</title>
 
 
+
+        <script>
+            website.addOnLoad(() =>
+            {
+                tickList('quote-list', 12);
+            });
+            console.log('RkJMQSBpcyBzdHVwaWQgYW5kIGEgcHlyYW1pZCBzY2hlbWUu');
+        </script>
     </head>
     <body>
 
@@ -39,76 +48,118 @@
     </ul>
 </nav>
 
-<script src="/js/nav.js"></script>
-
-
-            <div class="main">
+<script src="/js/nav.js"></script>
 
             <!--Transparent Navigation-->
-                <h1>Affordable, Captivating, and Efficient</h1>
+            <div id='titlecard' class="titlecard">
+                <div class="titlebox">
+                    <h1 class="title">ACE Airlines</h1>
 
-                <h2 class = "button">Book Now</h2>
+                    <div class="center-box">
+                        <noscript>
+                            <p>Affordable, Captivating, Efficient</p>
+                        </noscript>
+                        
 
-
-                <!--Have three squares in line with eachother with these saving programs-->
-                <div class = "frequentflyer">
-                    <h2>Join and Save</h2>
-                    <p>Access our discounts to fares, vacation bundles, and even discounts on bags</p>
+                        <!--For your own safety, we have a U.S. Marshal under disguise in every flight-->
+                    </div>
                 </div>
-
-                    <div class = "email">
-                    <h2>Subscribe For More Savings</h2>
-                    <p>Join our email lists for promotions, deals, and savings</p>
-                </div>
-
-                <div class = "card">
-                    <h2>A.C.E Mastercard</h2>
-                    <p>Earn up to 50,000 miles while tripling miles on all purchases</p>
-                </div>
-
-                <!--Book Your Flight Now Area-->
-                <div class = "flights">
-                    <h2>Book Your Flight Now</h2>
-                    <p>Flying to over 14 cities surrounding the Pennsylvania area, A.C.E is compared to many of the premier airlines while offering tickets up to 75% cheaper than competitors</p>
-                    <h2 class = "button">Book Now</h2>
+                <div class="call-to-action">
+                    <a href="/book.html" class='btn-clear' id='book-btn'><span class="btn-text">Book Flight</span></a>
                 </div>
             </div>
 
-                <!--Hiring Area-->
-                <div class = "hiring"> 
-            <h2>Join Our Team!</h2>
-                    <img alt="Mechanic" src="project\images\facebook.png" width="15" height="15">
-                    <h3>Mechanic</h3>
-                    <h3>Pilot</h3>
-                    <h3>Flight Attendant</h3>
-                    <h3>Coporate Office</h3>
+            <div class="main">
+                <!--Have three squares in line with eachother with these saving programs-->
+                <div class="topic">
+                    <div>
+                        <h2>Join and Save</h2>
+                        <p>Access our discounts to fares, vacation bundles, and even discounts on bags by joing our frequent fliers program!</p>
+                        <p><a href="/flyer.html">Click here</a> to learn more about our frequent fliers program!</p>
+                    </div>
+                    <div class="pic">
+                        <div class="img" style="background-image: url('/images/1-1230899662dsW5.jpg');"></div>
+                    </div>
                 </div>
-        </div>
 
-        
+                <div class="topic">
+                    <div class="pic">
+                        <div class="img" style="background-image: url('/images/1-1230899662dsW5.jpg');"></div>
+                    </div>
+                    <div>
+                        <h2>Subscribe For More Savings</h2>
+                        <p>Constantly searching for discounts and promotions with our company online but never search at the right time? Join our email list to never miss another opportunity to save money with our company.</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div>
+                        <h2>ACE Mastercard</h2>
+                        <p>Get an ACE Mastercard today to enjoy some of our many benefits. With a max of 60,000 miles, you'll be getting free flights in no time!</p>
+                        <p>Call (801) 888-7777 to setup your Mastercard today!</a></p>
+                    </div>
+                    <div class="pic">
+                        <div class="img" style="background-image: url('/images/flying.jpg');"></div>
+                    </div>
+                </div>
+
+                <!--Book Your Flight Now Area-->
+                <div class="topic">
+                    <div class="pic">
+                        <div class="img" style="background-image: url('/images/flying.jpg');"></div>
+                    </div>
+                    <div>
+                        <h2>Book Your Flight Now</h2>
+                        <p>Flying to over 14 cities surrounding the Pennsylvania area, ACE is compared to many of the premier airlines while offering tickets up to 75% cheaper than competitors</p>
+                        <a href="/book.html" class="button">Book Now</a>
+                    </div>
+                </div>
+
+                <!--Hiring Area-->
+                <div class="topic hire">
+                    <div>
+                        <h2>Join Our Team!</h2>
+                        <p style="font-size: 1.3em;"><a style="font-size: 1.0em;" href="/jobs.html">Join now!</a></p>
+                        <div class="group">
+                            <div><img alt="Mechanic" src="\images\ATyn9IGLSkkCAAAAAElFTkSuQmCC.png"></div>
+                            <div><h3>Mechanics</h3></div>
+                        </div>
+
+                        <div class="group">
+                            <div><img alt="Pilot" src="\images\unknown.png"></div>
+                            <div><h3>Pilots</h3></div>
+                        </div>
+
+                        <div class="group">
+                            <div><img alt="Attendant" src="/images\waitress-silhouette.png"></div>
+                            <div><h3>Flight Attendants</h3></div>
+                        </div>
+
+                        <div class="group">
+                            <div><img alt="Attendant" src="\images\LLtszwAAAABJRU5ErkJggg.png"></div>
+                            <div><h3>Corporate Offices</h3></div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <div class="img" style="background-image: url('/images/team.png');"></div>
+                    </div>
+                </div>
+            </div>
+
+            
 <footer>
-    <h2>Connect With Us:</h2>
-    <p>
-        <a href="#"> https://www.facebook.com/
-        <img alt="Facebook Icon" src="project\images\facebook.png" width="15" height="15">
-        </a>
-    </p>
-    <p>
-        <a href="#">  https://www.instagram.com/accounts/login/?hl=en
-        <img alt="Instagram Icon" src="project\images\instagram.png" width="15" height="15">
-        </a>
-        </p>
-    <p>
-        <a href="#"> https://twitter.com/login
-        <img alt="Twitter Icon" src="project\images\twitter.png" width="15" height="15">
-        </a>
-    </p>
-
+    <h2 style="margin-bottom: 5px;">Connect With Us</h2>
+    <ul>
+        <li><a href="#"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram instagram ssm" aria-hidden="true"></i></a></li>
+    </ul>
+    <hr/>
     <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>
 </footer>
 
-<!--https://www.flaticon.com/authors/pixel-perfect Icon Creator-->
-
+<!--https://www.flaticon.com/authors/pixel-perfect Icon Creator-->
+        </div>
     </body>
 </html>
 
