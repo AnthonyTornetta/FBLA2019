@@ -1,0 +1,180 @@
+!! BAD HTML TAG OPENING/CLOSING DETECTED IN FILE "project\flyer.html" !!
+== Debug Info ==
+Tag Start: 16 | Tag End: 13
+Start text: <html lang="en">
+    <head>
+        <title>ACE Airlines</title>
+        <template src='/templates/head.html' />
+    </head>
+    <body>
+        <div class="wrapper">
+            <template src='/templates/nav.html' />
+
+            <div class="main">
+
+                <h2>Constantly traveling and wanting to get the extra benefits without paying a fortune everytime? Get one of our frequent flyer packages!</h2>
+
+                <h3>Join one of our three package deals for frequent flyers or contact us at 1(801)555-7777 for a special plan made just for you!</h2>
+
+                <div class = "package">
+                    <h2>Affordable Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection (Stretch Not Included)</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Captivating Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Efficient Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                        <li>Free Check-In Bag</li>
+                        <li>Free Carry-On Bag</li>
+                        <li>Free On-Flight Snack</li>
+                        <li>Free On-Flight Drink</li>
+                    </ul>
+                </div>
+
+                <div class = "suitcase">
+                    <!--Add image of a suitcase to be centered in its own rectangle-->
+                </div>
+            </div>
+        </div>
+
+        <template src='/templates/footer.html' />
+    </body>
+</html>
+
+End text: >
+<html lang="en">
+    <head>
+        <title>ACE Airlines</title>
+        <template src='/templates/head.html' />
+    </head>
+    <body>
+        <div class="wrapper">
+            <template src='/templates/nav.html' />
+
+            <div class="main">
+
+                <h2>Constantly traveling and wanting to get the extra benefits without paying a fortune everytime? Get one of our frequent flyer packages!</h2>
+
+                <h3>Join one of our three package deals for frequent flyers or contact us at 1(801)555-7777 for a special plan made just for you!</h2>
+
+                <div class = "package">
+                    <h2>Affordable Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection (Stretch Not Included)</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Captivating Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Efficient Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                        <li>Free Check-In Bag</li>
+                        <li>Free Carry-On Bag</li>
+                        <li>Free On-Flight Snack</li>
+                        <li>Free On-Flight Drink</li>
+                    </ul>
+                </div>
+
+                <div class = "suitcase">
+                    <!--Add image of a suitcase to be centered in its own rectangle-->
+                </div>
+            </div>
+        </div>
+
+        <template src='/templates/footer.html' />
+    </body>
+</html>
+
+
+File Parsed
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ACE Airlines</title>
+        <template src='/templates/head.html' />
+    </head>
+    <body>
+        <div class="wrapper">
+            <template src='/templates/nav.html' />
+
+            <div class="main">
+
+                <h2>Constantly traveling and wanting to get the extra benefits without paying a fortune everytime? Get one of our frequent flyer packages!</h2>
+
+                <h3>Join one of our three package deals for frequent flyers or contact us at 1(801)555-7777 for a special plan made just for you!</h2>
+
+                <div class = "package">
+                    <h2>Affordable Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection (Stretch Not Included)</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Captivating Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                    </ul>
+                </div>
+
+                <div class = "package">
+                    <h2>Efficient Package</h2>
+                    <ul>
+                        <li>Priority Boarding</li>
+                        <li>Quicker Check-In</li>
+                        <li>Seat Selection</li>
+                        <li>100% Refundable</li>
+                        <li>Free Check-In Bag</li>
+                        <li>Free Carry-On Bag</li>
+                        <li>Free On-Flight Snack</li>
+                        <li>Free On-Flight Drink</li>
+                    </ul>
+                </div>
+
+                <div class = "suitcase">
+                    <!--Add image of a suitcase to be centered in its own rectangle-->
+                </div>
+            </div>
+        </div>
+
+        <template src='/templates/footer.html' />
+    </body>
+</html>
