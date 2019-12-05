@@ -59,3 +59,5 @@ typings/
 
 # next.js build output
 .next
+error-log.txt
+server.bat
