@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: stretch;
 
-    .package
+    .package, .box
     {
         .title
         {
@@ -14,7 +14,6 @@
             font-weight: bold;
         }
 
-        
         flex-basis: 30%;
 
         box-sizing: border-box;
@@ -37,7 +36,7 @@
 {
     .packages
     {
-        .package
+        .package, .box
         {
             margin: 5%;
             flex: 1;
