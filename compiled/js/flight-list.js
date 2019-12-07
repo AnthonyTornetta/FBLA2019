@@ -27,10 +27,6 @@ website.addOnLoad(() =>
     'Newark Liberty International Airport (EWR)',
     'Harrisburg International Airport (MDT)'];
 
-    let from = 'PA';
-    let to = 'asdf';
-    let time = 'now';
-
     let list = `
     <tr>
         <th>Flight From</th>
@@ -38,19 +34,44 @@ website.addOnLoad(() =>
         <th>Departure Time</th>
     </tr>`;
 
-    let time = Date.now();
+    let time = new Date();
+
+    let lastDay = time.getDate();
+    
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let months = ['January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'];
 
     for(let i = 0; i < 100; i++)
     {
+        let mod = time.getHours() % 12;
+
         let rdm = nextRdmNot(-1, airports.length);
+
+        let format = `${days[time.getDay()]}, ${months[time.getMonth()]} ${time.getDate()}, ${time.getFullYear()}`;
+
         list += `
     <tr>
+        ${ lastDay !== time.getDate() ? 
+        (`<td><b>${format}</b></td><td><b>${format}</b></td><td></td></tr><tr>`) 
+        : ''}
         <td>${airports[rdm]}</td>
         <td>${airports[nextRdmNot(rdm, airports.length)]}</td>
-        <td>${time}</td>
+        <td>${mod === 0 ? 12 : mod}:00 ${time.getHours() / 12 >= 1 ? 'PM' : 'AM'}</td>
     </tr>`;
 
-        time.hour++;
+        lastDay = time.getDate();
+        time.setHours(time.getHours() + 1);
     }
 
     flightsList.innerHTML = list;
